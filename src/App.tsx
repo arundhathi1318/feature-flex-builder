@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Signup from "./pages/Signup";
 import VerifyOtp from "./pages/VerifyOtp";
-import Profile from "./pages/onboarding/Profile";
+import OnboardingProfile from "./pages/onboarding/Profile";
 import Liability from "./pages/onboarding/Liability";
 import Statement from "./pages/onboarding/Statement";
 import Success from "./pages/onboarding/Success";
@@ -15,6 +15,10 @@ import Dashboard from "./pages/Dashboard";
 import Loans from "./pages/Loans";
 import Savings from "./pages/Savings";
 import Bills from "./pages/Bills";
+import Goals from "./pages/Goals";
+import Tips from "./pages/Tips";
+import Expenses from "./pages/Expenses";
+import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +32,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/verify-otp" element={<VerifyOtp />} />
-          <Route path="/onboarding/profile" element={<Profile />} />
+          <Route path="/onboarding/profile" element={<OnboardingProfile />} />
           <Route path="/onboarding/liability" element={<Liability />} />
           <Route path="/onboarding/statement" element={<Statement />} />
           <Route path="/onboarding/success" element={<Success />} />
@@ -36,6 +40,10 @@ const App = () => (
           <Route path="/loans" element={<Loans />} />
           <Route path="/savings" element={<Savings />} />
           <Route path="/bills" element={<Bills />} />
+          <Route path="/goals" element={<Goals />} />
+          <Route path="/tips" element={<Tips />} />
+          <Route path="/expenses" element={<Expenses />} />
+          <Route path="/profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
